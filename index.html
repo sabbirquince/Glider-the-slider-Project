@@ -1,0 +1,184 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="header__navigation">
+
+            <ul class="header__list">
+
+                <li class="header__item">
+                    <a class="header__link" href="#about">About</a>
+                </li>
+
+                <li class="header__item ">
+                    <a class="header__link " href="#services">Services</a>
+                </li>
+
+                <li class="header__item ">
+                    <a class="header__link " href="#team">Team</a>
+                </li>
+
+                <li class="header__item  ">
+                    <a class="header__link " href="#contact">Contact</a>
+                </li>
+
+
+                <!-- nav button -->
+                <li class="header__item nav-btn">
+                    <p class="id-show">hello, Elizabeth!</p>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-interval="400000">
+                    <img src="images/back-3.jpg" class="c-image" alt="...">
+
+                    <div class="title-box">
+
+                        <h1 class="title">INDONESIA</h1>
+
+                        <p class="margin-top-sm title-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore, ad
+                            nam ea
+                            commodi earum sint. Dolorem, atque iusto! Ullam, facilis nesciunt. Repellendus ea
+                            provident
+                            est neque voluptate eveniet possimus eum.</p>
+
+                        <a href="#" class="btn margin-top-md">Explore &rarr;</a>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item" data-interval="400000">
+                    <img src="images/back-2.jpg" class="c-image" alt="...">
+
+                    <div class="title-box">
+                        <h1 class="title">THAILAND</h1>
+
+                        <p class="margin-top-sm title-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore, ad
+                            nam ea
+                            commodi earum sint. Dolorem, atque iusto! Ullam, facilis nesciunt. Repellendus ea
+                            provident
+                            est neque voluptate eveniet possimus eum.</p>
+
+                        <a href="#" class="btn margin-top-md">Explore &rarr;</a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="carousel-item" data-interval="400000">
+                    <img src="images/back-4.jpg" class="c-image" alt="...">
+
+                    <div class="title-box">
+                        <h1 class="title">BALI</h1>
+
+                        <p class="margin-top-sm title-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore, ad
+                            nam ea
+                            commodi earum sint. Dolorem, atque iusto! Ullam, facilis nesciunt. Repellendus ea
+                            provident
+                            est neque voluptate eveniet possimus eum.</p>
+
+                        <a href="#" class="btn margin-top-md">Explore &rarr;</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--------------- inside slider ---------------->
+
+        <div class="slideShow">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <h6 class="sliderTitle">Indonesia</h6>
+                            <p>&#9829; &#9829; &#9829; &#9829; &#9829;</p>
+                            <img class="insideSlideImg" src="images/back.jpg" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <h6 class="sliderTitle">Thailand</h6>
+                            <p>&#9829; &#9829; &#9829;</p>
+                            <img class="insideSlideImg" src="images/back-2.jpg" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <h6 class="sliderTitle">Bali</h6>
+                            <p>&#9829; &#9829; &#9829; &#9829;</p>
+                            <img class="insideSlideImg" src="images/back-3.jpg" alt="">
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- arrow keys -->
+
+                <div class="glide__arrows arrow-box" data-glide-el="controls">
+
+                    <button class="arrow" href="#carouselExampleSlidesOnly" role="button" data-slide="prev"
+                        data-glide-dir="<">&#60;</button>
+
+                    <button class="arrow margin-left-md" href="#carouselExampleSlidesOnly" role="button"
+                        data-slide="next" data-glide-dir=">">&#62;</button>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <!-- glide.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="index.js"></script>
+    <script>
+        var config = {
+            type: 'carousel',
+            startAt: 0,
+            perView: 2
+        };
+
+        new Glide('.glide', config).mount()
+    </script>
+
+</body>
+
+</html>
